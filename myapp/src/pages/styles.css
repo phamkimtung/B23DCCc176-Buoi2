@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* Tổng thể */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Màu nền nhẹ */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Tiêu đề */
+h1 {
+  color: #333; /* Màu chữ tối */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Danh sách sản phẩm */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff; /* Màu nền cho sản phẩm */
+  border: 1px solid #ccc; /* Đường viền nhẹ */
+  border-radius: 8px; /* Bo góc */
+  padding: 15px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Nút */
+button {
+  background-color: #007bff; /* Màu xanh */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Màu xanh tối hơn khi hover */
+}
+
+/* Link */
+a {
+  color: #28a745; /* Màu xanh lá cây */
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tìm kiếm */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Trang */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: 1px solid #007bff; /* Đường viền màu xanh */
+  border-radius: 4px;
+  background-color: #f1f1f1; /* Màu nền cho nút trang */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Đặt màu chữ và nền cho các nút phân trang */
+.page-button {
+  color: black; /* Màu chữ đen */
+}
+
+.page-button:hover {
+  background-color: #ddd; /* Màu nền khi hover */
+}
+
+.page-button.active {
+  background-color: #007bff; /* Nút trang hiện tại màu xanh */
+  color: white; /* Chữ màu trắng */
+}
+
+/* Đặt màu chữ cho các liên kết "Trang trước", "Trang sau" */
+.pagination a {
+  color: black; /* Màu chữ đen cho liên kết */
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 10px;
+}
